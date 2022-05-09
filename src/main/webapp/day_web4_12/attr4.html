@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>속성 선택자</title>
+<style>
+   ul {
+		 list-style:none;
+   }
+	 li {
+		 display:inline-block;
+		 margin:10px;
+	 }
+		li a {
+			padding: 5px 20px;
+			font-size: 14px;
+			color: blue;
+			text-decoration: none;
+		}
+	a[title |="us"] {
+		background: url(images/us.png) no-repeat left center;
+		padding: 5px 25px;
+	}
+	a[title |="jap"] {
+		/* 수직바("|") 있을시 하이픈까지 구별 가능 */
+		
+		background: url(images/jp.png) no-repeat left center;
+		padding: 5px 25px;
+	}
+</style>
+</head>
+
+<body>
+	<ul>
+		<li>외국어 서비스 : </li>
+		<li><a href="#" title="us">영어</a></li>
+		<li><a href="#" title="us-english">영어</a></li>
+		<li><a href="#" title="japanese">일본어</a></li>
+		
+		<!-- 띄어쓰기나 하이픈("-")적용해줘야함, 섞인 단어는 적용안됨 -->
+		
+	</ul>
+</body>
+ </html>

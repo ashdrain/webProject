@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>*** 1차프로젝트 회원가입 페이지 ***</title>
+<style>
+	label { width: 200px; 
+		display: inline-block ;}
+</style>		
+
+
+<script type="text/javascript">
+
+function f1(){
+	
+	alert("관리자 등록에 성공하였습니다.");
+	myfrm.action = "projectRegResult.jsp" ;
+	myfrm.submit() ;
+}
+
+function f2(){
+	
+
+	var adminpw1 = document.getElementById("pwd1").value;
+	var adminpw2 = document.getElementById("pwd2").value;
+	
+	if(adminpw1 != adminpw2){
+		alert("비밀번호 확인이 올바르게 입력되었는지 확인해주세요.");
+		document.getElementById("pwd1").focus();
+		return false;
+	} else if() {
+		
+	}
+	return f1();
+}
+
+
+
+</script>
+
+</head>
+<body>
+
+<h1>관리자 신규등록</h1>
+
+<form name="myfrm" action="projectRegResult.jsp" onsubmit="return f2();" method="post" >
+
+<fieldset>
+
+<legend>로그인 정보</legend>
+<ul>
+<li>
+<label for="adminid">관리자ID</label>
+<input type="text" name="adminid" maxlength="20" autofocus="autofocus">
+</li>
+
+<li>
+<label for="adminpw1">비밀번호</label>
+<input type="password" id="pwd1" name="adminpw1" maxlength="30">
+</li>
+
+<li>
+<label for="adminpw2">비밀번호 확인</label>
+<input type="password" id="pwd2" name="adminpw2" maxlength="30">
+</li>
+
+</ul>
+
+</fieldset>
+
+<fieldset>
+<legend>세부정보 입력</legend>
+
+<ul>
+
+<li>
+<label for="adminname">이름</label>
+<input type="text" name="adminname" maxlength="20">
+</li>
+
+<li>
+<label for="admincall">연락처</label>
+<input type="tel" name="admincall" pattern="0[0-9]{1,2}-[0-9]{3,4}-[0-9]{4}">
+</li>
+
+<li>
+<label for="admindept">소속부서</label>
+<input type="text" name="admindept" maxlength="12">
+</li>
+
+<li>
+<label for="workteam">근무조</label>
+
+<select name="workteam">
+	<option value="Ateam">A조</option>
+	<option value="Bteam">B조</option>
+	<option value="Cteam">C조</option>
+	<option value="Dteam">D조</option>
+
+</select>
+
+</li>
+
+
+
+</ul>
+
+<input type="submit" value="등록">
+
+</fieldset>
+
+</form>
+
+
+</body>
+</html>

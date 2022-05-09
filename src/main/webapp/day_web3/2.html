@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+	
+	
+	<style type="text/css">
+	
+	
+		@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+		
+	
+		body { color: bule; 
+		background-color: white;
+		
+		font-family: 'Nanum_Gothic', 'SDSamliphopangche_Outline', "HY엽서M" ;
+		
+		/* 글자색은 상속되지만 배경색은 상속되지 않음 */
+		
+		}
+		p { border: 1px solid red !important; }
+		p { border: 1px solid greed; }
+		/* 그냥 하면 뒤에거가 적용됨, important 우선 */
+		h1 { border: 1px solid blue; }
+		#cc { border: 1px solid orange; }
+		/* 태그보다 id지정 우선순위가 더 높음 */
+		.dd { border: 1px solid skyblue; }
+		
+		/* 우선순위 : !important > inline > id > class > tag */
+		
+		div.box { 
+			border: 1px solid skyblue; 
+			witdh: 50px;
+			padding: 20px;
+			
+			}
+			div.box:hover {
+				color: red;
+				transform: rotate(15deg);
+			}
+		
+		.textDeco { text-decoration: line-through ; }
+		.upper { text-transform : uppercase ;  }
+		.caps { text-transform : capitalize ;  }
+		
+		p { text-align: center ;
+			line-height: 1.5em ;
+		 	}
+		
+	</style>
+
+</head>
+
+
+<body>
+
+<h1>
+<span class="upper"> @font-face { </span>
+<span class="caps">font-family: 'SDSamliphopangche_Outline'; </span>
+<span>src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff&#39;) format('woff');</span>
+<span>font-weight: normal;</span>
+<span>font-style: normal; } </span>
+        
+</h1>
+
+<h1 id="cc">블루베리에 관한 연구</h1>
+<h2>블루베리의 <span class="textDeco">항산화</span> 효능</h2>
+<p>블루베리는 항산화제인 안토시아닌과 폴리페놀을 다량 함유하고 있습니다.</p>
+<h2>블루베리와 노화</h2>
+<p>USDA 영양연구센터에서 그러한 사실을 연구, 증명하였습니다.</p>
+
+<div class="box">
+	마우스오버
+
+
+</div>
+
+
+
+
+</body>
+</html>

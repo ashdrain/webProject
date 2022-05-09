@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+	* {
+	border: 1px solid gray;
+	padding: 10px;
+	
+	}
+	
+	div p { background-color: orange; }
+	/* selector 사이의 빈칸 : 자손을 의미... 연결연산자 또는 컴비네이션 선택자로 불림 */
+	/* div랑 p사이에 빈칸 존재 */
+	/* 자손은 하위의 모든 자식들 포함 */
+	
+	
+	section p { color: red; }
+	
+	section > p { font-size: 20px; }
+	/* >는 자식을 의미... 자손이랑 다름 */
+	
+	
+</style>
+
+</head>
+<body>
+
+<section>
+	<p>section 11장 선택자들 연습</p>
+	<p>section 11장 선택자들 연습</p>
+	<p>section 11장 선택자들 연습</p>
+	<div>
+	
+		<p>section... div... p가 존재</p>
+		
+	</div>
+
+</section>
+<p>단독... </p>
+<div>
+
+	<p>div 아래 11장 선택자들 연습</p>
+
+</div>
+
+
+
+</body>
+</html>

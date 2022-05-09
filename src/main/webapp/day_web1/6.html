@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML로 표 만들기</title>
+<style type="text/css">
+
+table, td { border-collapse : collapse; }
+td { font-weight: bold; padding: 5px; }
+<!--pading은 상하좌우 간격-->
+
+</style>
+
+
+</head>
+<body>
+
+<!--body에 스타일을 지정하는것은 좋지 않다-->
+
+<h1>*** 표만들기 ***</h1>
+
+<table border="1">
+	<tr>
+		<th>직원번호</th>
+		<th>이름</th>
+		<th>이메일</th>
+	</tr>
+	<tr>
+		<td>100</td>
+		<td>홍길동</td>
+		<td>aa@daum.net</td>
+	</tr>
+	<tr>
+		<td>200</td>
+		<td>김길동</td>
+		<td>bb@daum.net</td>
+	</tr>
+	
+</table>
+
+<br>
+
+<table border="2">
+
+<caption> 표 제목 </caption>
+
+	<tr>
+		<th>이름</th>
+		<td>홍길동</td>
+		<th>연락처</th>
+		<td>010-1234-5678</td>
+
+
+	</tr>
+
+	<tr>
+		<th>주소</th>
+		<td colspan="3">서울시 구로구</td>
+
+	</tr>
+	<tr>
+		<th rowspan="2">자기소개</th>
+		<td colspan="3">열공중...</td>
+
+	</tr>
+	
+	<tr>
+		<th>취미</th>
+		<td rowspan="2">A</td>
+		<td>B</td>
+		<td>C</td>
+	
+	</tr>
+	
+</table>
+</br>
+</body>
+</html>

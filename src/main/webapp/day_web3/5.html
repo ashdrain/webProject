@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+	
+	* { margin: 0; padding: 0; }
+	div {
+		border: 1px solid red;
+		width: 500px;
+		height: 100px;
+		padding: 10px;
+		margin: 20px;
+		}
+	span {
+		border: 1px solid gray;
+		}	
+	/* 사이즈계산시 border-box이면 border전체까지 합쳐서 500px이고 content-box면 그 콘텐츠 영역만 500px가 되기때문에 전체적으로는 더 크게잡힘 */
+	.box1 { box-sizing: border-box; }
+	.box2 { box-sizing: content-box; }
+	
+	p { 
+		border: 1px solid gray;
+		}
+	.p1 { width: 300px; height: 20px; }
+	.p2 { width: 50%; height: 20px; }
+	
+	
+</style>
+
+</head>
+
+<body>
+
+<div class="box1"> box1
+
+</div>
+
+<div class="box2"> box2
+
+
+</div>
+
+<div class="box3"> 
+	<span>box3-1</span>
+	<span>box3-2</span>
+	<p class="p1">box3-3</p>
+	<p class="p2">box3-4</p>
+	
+	<img src="../images/tick.png" alt="tick">
+
+	<a href="http://www.naver.com"> 네이버 사이트로 이동 </a>
+	<a href="http://www.w3schools.com"> w3school사이트로 이동 </a>
+	
+	<strong> CSS 연습 </strong>
+
+</div>
+
+
+
+</body>
+</html>

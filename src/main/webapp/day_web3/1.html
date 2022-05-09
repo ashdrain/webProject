@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Insert title here</title>
+
+<link href="../css/external.css"
+rel="stylesheet" type="text/css">
+
+<style type="text/css">
+ul {
+	/* 태그선택자 실습 - css 주석 */
+	color: purple;
+	list-style: none;
+	border: 1px solid green;
+	padding: 10px;
+	
+}
+*{
+	margin:0;
+	padding:0;
+	
+}
+p { font-size: 20px;
+ 	/*
+	margin-top: 20px; 
+	margin-right: 10px; 
+	margin-bottom: 20px; 
+	margin-left: 10px; 
+	== 위아래같음
+	margin: 20px 10px 20px 10px;
+	
+	border width : 1px;
+	border-style : solid;
+	border-color : green;
+	== 위아래같음
+	border: 1px solid green;
+	
+	padding: 10px 20px 10px 20px;
+	
+	*/
+}
+
+li {
+	
+	padding: 10px;
+}
+
+.aa {
+	background-color: pink;
+}
+
+li.aa {
+	font-size: 25px
+}
+
+#bb { background-color: #f00099; }
+
+#container {
+	border: 5px dotted gray;
+	width: 1200px;
+	height: 1600px;
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<img src="../images/umbrella.jpg" alt= "우산">
+<h1>우산</h1>
+
+<ul>
+	<!-- html태그에서 [ style="" ]===> inline css -->
+	<li style="color:blue;">이슬비 내리는 이른 아침에</li>
+	<li>우산셋이 나란히 걸어갑니다.</li>
+	<li><label style="color:red">빨간우산</label> <label style="color:blue">파란우산</label> <label style="color:gray">찢어진우산</label></li>
+	<li><i>좁다란 골목길에 우산 세개가~</i></li>
+	<li class="aa">이마를 마주대고 걸어갑니다.</li>
+
+
+</ul>
+
+<h1>블루베리에 관한 연구</h1>
+<h2 id="bb">블루베리의 항산화 효능</h2>
+<p>블루베리는 항산화제인 안토시아닌과 폴리페놀을 다량 함유하고 있습니다.</p>
+ 
+
+
+
+</body>
+</html>

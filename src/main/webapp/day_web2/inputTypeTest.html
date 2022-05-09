@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>input tag의 여러가지 타입 살펴보기</h1>
+
+<form name="myfrm" action="inputResult.jsp">
+
+<input readonly="readonly" value="읽기만가능한메세지" > <br>
+1.<input name="kosta1" autofocus="autofocus" placeholder="사용할 닉네임을 입력하세요"> <br>
+2.<input type="text" name="kosta2" placeholder="아이디를 입력하세요" required="required"> <br>
+3.<input type="password" name="kosta3" placeholder="비밀번호를 입력하세요" required="required"> <br>
+4.<input type="search" name="kosta4"> <br>
+5.<input type="submit" name="kosta5" value="submit"> <br>
+6.<input type="button" name="kosta6" onclick="f1();" value="서버전송"> <br>
+7.<input type="email" name="kosta7" placeholder="aa@bb.com"> <br>
+8.<input type="tel" name="kosta8" pattern="0[0-9]{1,2}-[0-9]{3,4}-[0-9]{4}" > <br>
+9.<input type="url" name="kosta9" placeholder="http://aa.bb.cc"> <br>
+<br>
+10. number= 숫자만입력: <input type="number" name="kosta10" min="0" max="100" step="10" > <br>
+11. range=범위입력: <input type="range" name="kosta11" min="1" max="10" > <br>
+<br>
+12-1. radio= 서로 배타적: <br>
+	<input type="radio" name="subject" value="java" checked="checked"> 자바 <br>
+	<input type="radio" name="subject" value="sql" > SQL <br>
+	<input type="radio" name="subject" value="html" > HTML <br>
+	<input type="radio" name="subject" value="css" > CSS <br>
+<br>	
+12-2. radio= 서로 배타적: <br>
+	<input type="radio" name="hobby" value="a" checked > 공부 <br>
+	<input type="radio" name="hobby" value="b" > 산책 <br>
+	<input type="radio" name="hobby" value="c" > 게임 <br>
+	<input type="radio" name="hobby" value="d" > 독서 <br>
+<br>
+13. checkbox= 서로 독립적(중복가능) <br>
+	<input type="checkbox" name="hobby2" value="a" checked > 축구 <br>
+	<input type="checkbox" name="hobby2" value="b" > 농구 <br>
+	<input type="checkbox" name="hobby2" value="c" > 야구 <br>
+	<input type="checkbox" name="hobby2" value="d" > 족구 <br>
+<br>
+14. color
+	<input type="color" > <br>
+<br>
+15. date , month , week, time , datetime-local <br>
+	1) <input type="date" name="kosta12"> <br>
+	2) <input type="month" name="kosta13" > <br>
+	3) <input type="week" name="kosta14" > <br>
+	4) <input type="time" name="kosta15" > <br>
+	5) <input type="datetime-local" name="kosta16" > <br>
+<br>
+16. select <br>
+	<select name = hobby3>
+		<option value="java">자바</option>
+		<option value="sql">SQL</option>
+		<option value="html">HTML</option>
+		<option value="css">CSS</option>
+	</select> 
+<br>
+17. select2 <br>
+	<select name = hobby4 >
+		<option value="java">자바</option>
+		<option value="sql">SQL</option>
+		<option value="html">HTML</option>
+		<option value="css">CSS</option>
+	</select> 
+<br>
+
+
+
+<input type="submit" value="서버로 전송...">
+<input type="reset" value="다시입력...">
+<input type="image" src="../images/login.jpg">
+<input type="button" value="button타입">		
+<button>버튼태그이용1 (form이 서버로 전송됨)</button>
+
+<input type="text" list="hobbylist">
+<datalist id ="hobbylist">
+	<option value="java">자바연습</option>
+	<option>게임</option>
+	<option>유튜브</option>
+	<option>커뮤니티</option>
+	
+</datalist>
+
+<br>
+
+<textarea rows="10" cols="50">
+
+</textarea>
+
+
+<form oninput="result.value = parseInt(num1.value) + parseInt(num2.value)">
+	<input type="number" name="num1" value="0" >  
+	+ <input type="number" name="num2" value="0" >
+	= <output name="result" for= "num">
+	</output>
+	
+</form>
+
+
+		
+<!-- placeholder : 회색글씨로 입력란에 예시를 보여줌 -->
+</form>
+
+<script>
+function f1(){
+	
+	alert("버튼을 눌렀습니다!!!");
+	myfrm.action = "anchor.html" ;
+	myfrm.submit() ;
+	
+}
+
+</script>
+
+
+</body>
+</html>

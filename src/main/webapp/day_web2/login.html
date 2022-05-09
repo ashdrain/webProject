@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+
+<style>
+	label { width: 100px; 
+		display: inline-block ;
+		background-color: lightgreen ; }
+	h1 { border: 1px solid green; width: 500px; }
+	
+</style>
+
+</head>
+<body>
+
+<!-- input , label 요소는 inline 요소이다. (contents 양만큼만 자리를 차지함) , width속성 변경불가 -->
+<!-- 문장끝마다 <br>로 내려야함 -->
+<!-- submit은 서버로 전송하는 버튼이다 -->
+<!-- <label>태그 : <form> 안에서 표시되는 텍스트문장  -->
+<!-- <h1>요소는 block 요소이다 (1줄을 차지한다) -->
+<!-- method가 get방식이 디폴트, post설정하면 주소창에 정보 안보임 -->
+
+
+<h1>로그인하기</h1>
+
+<form action="loginCheck.jsp" method="get">
+<fieldset>
+<legend>Get방식 연습</legend>
+	<label>아이디: </label><input type="text" name="userid" value="yhju76"><br>
+	<label>비밀번호: </label><input type="password" name="userpass" value="1234"><br>
+	<input type="submit" value="서버로_전송">
+</fieldset>
+</form>
+
+<hr>
+
+<form action="loginCheck.jsp" method="post">
+<fieldset>
+<legend>Post방식 연습</legend>
+
+	<!-- maxlength로 입력할 최대길이 설정가능 -->
+	<label>아이디: </label><input type="text" name="userid2" value="yhju76" maxlength="20"><br>
+	<label>비밀번호: </label><input type="password" name="userpass2" value="1234"><br>
+	
+	<!-- hidden 타입은 가져갈때 안보임, 결과값만 나중에 표시됨 -->
+	<input type="hidden" name="phone" value="010-1234-5678">
+	
+	<input type="submit" value="서버로_전송">
+</fieldset>
+</form>
+
+
+</body>
+</html>
